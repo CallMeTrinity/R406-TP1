@@ -11,31 +11,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="text-center my-5">TP API call️</h1>
-        </header>
+<div class="container">
+    <header>
+        <h1 class="text-center my-5">TP API call️</h1>
+    </header>
 
-        <div class="row">
-            <div class="col-md-6 my-3">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="fs-3">Catégories</h2>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="fs-5">Liste des catégories disponibles </h3>
+    <div class="row">
+        <div class="col-md-6 my-3">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="fs-3">Catégories</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="fs-5">Liste des catégories disponibles </h3>
 
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-outline-secondary text-start" type="button">Categorie A</button>
-                            <button class="btn btn-outline-secondary text-start" type="button">Categorie B</button>
-                        </div>
-                    </div>
-                    <div class="card-footer text-end">
-                        <button class="btn btn-primary">
-                            Update category list
-                        </button>
+                    <div class="d-grid gap-2" id="categoryList">
+                        <button class="btn btn-outline-secondary text-start" type="button">Catégorie</button>
                     </div>
                 </div>
+                <div class="card-footer text-end">
+                    <button class="btn btn-primary" onclick="update()">
+                        Update category list
+                    </button>
+                </div>
+            </div>
 
             </div>
             <div class="col-md-6 my-3">
@@ -45,24 +44,17 @@
                     </div>
                     <div class="card-body">
                         <h3 class="fs-5">Liste des produits de la catégorie choisie </h3>
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between">
-                                Produit 1
-                                <i class="bi bi-trash del-prod"></i>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between">
-                                Produit 2
-                                <i class="bi bi-trash del-prod"></i>
-                            </li>
+                        <ul class="list-group" id="productList">
+
                         </ul>
                     </div>
 
-                </div>
             </div>
         </div>
+    </div>
 
-        <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
-        <script src="./vendor/axios/axios.js"></script>
-        <script src="./js/TP_api.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./vendor/axios/axios.js"></script>
+    <script src="./js/TP_api.js"></script>
 </body>
 </html>
