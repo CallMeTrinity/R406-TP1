@@ -26,11 +26,11 @@
                     <h3 class="fs-5">Liste des catégories disponibles </h3>
 
                     <div class="d-grid gap-2" id="categoryList">
-                        <button class="btn btn-outline-secondary text-start" type="button">Catégorie</button>
+                        
                     </div>
                 </div>
                 <div class="card-footer text-end">
-                    <button class="btn btn-primary" onclick="update()">
+                    <button class="btn btn-primary">
                         Update category list
                     </button>
                 </div>
@@ -45,7 +45,7 @@
                     <div class="card-body">
                         <h3 class="fs-5">Liste des produits de la catégorie choisie </h3>
                         <ul class="list-group" id="productList">
-
+                            
                         </ul>
                     </div>
 
@@ -55,6 +55,6 @@
 
     <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./vendor/axios/axios.js"></script>
-    <script src="./js/TP_api.js"></script>
+    <script src="./js/TP_api.js" type="module"></script>
 </body>
 </html>
