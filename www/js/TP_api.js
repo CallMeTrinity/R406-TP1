@@ -5,8 +5,7 @@ const API_URL = "https://dummyjson.com"; // URL de base de l'API
 async function fetchData(url) {
   const response = await fetch(url);
   try {
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (err) {
     console.log(err);
   }
