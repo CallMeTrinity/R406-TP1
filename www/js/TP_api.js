@@ -65,6 +65,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
   });
-
+  const updateBtn = document.getElementById('updateBtn');
+  updateBtn.addEventListener('click', async() => {
+    try{
+      let jsonData = await fetchData(`${API_URL}/products`)
+    }catch (error) {
+      console.error(error)
+    }
+  })
   
 });
